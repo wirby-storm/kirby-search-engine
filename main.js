@@ -3,6 +3,7 @@ const button = document.getElementById('dod')
 const re = document.getElementById('q')
 document.getElementById('u').onkeydown = function(event) {
     if (event.keyCode == 13) {
+        const input = document.getElementById('u').value
         window.open(`https://www.google.com/search?q=${input}`);
     }
 }
