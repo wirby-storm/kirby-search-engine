@@ -5,7 +5,7 @@ const re = document.getElementById('q')
 function dodo (){
   const input = document.getElementById('u').value
   if (input = "wirby maps"){
-    window.open(`/s`);
+    window.open(`https://wirbymaps.pages.dev/`);
   }
   else{
   
