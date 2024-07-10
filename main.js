@@ -4,7 +4,8 @@ const re = document.getElementById('q')
 
 function dodo (){
   const input = document.getElementById('u').value
-  if input = "wirby maps"{  
+  if (input = "wirby maps"){
+    window.open(``);
   }
   else{
   
