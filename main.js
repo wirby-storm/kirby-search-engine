@@ -6,8 +6,7 @@ document.getElementById('u').onkeydown = function(event) {
     if (event.keyCode == 13 && input.length > 0) {
         if (input.toLowerCase() = "wirby maps"){
             window.open(`https://wirbymaps.pages.dev/`);
-        }
-        else {
+        } else {
            window.open(`https://www.google.com/search?q=${input}`);
         }
     }
