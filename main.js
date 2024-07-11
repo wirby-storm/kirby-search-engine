@@ -11,7 +11,7 @@ document.getElementById('u').onkeydown = function(event) {
         }
     }
 }
-document.getElementById('myImage').onclick() = funtion(){
+document.getElementById('myImage').onclick() = funtion()
     console.log('doen')
 }
 let arr = ["mirr.jpeg", "asset.jpeg","jpeg.jpeg", "kirby6.jpeg", "kirbyforgoot.jpeg", "mirr2.jpeg","kirby0.jpeg", "robot.png", "wii.jpeg", "maxresdefault.jpg", "KirbySuperStar.jpeg", "max.jpeg", "air.png", "Blowout_Blast.png", "d.jpg", "snes.jpeg", "maxres.jpeg", "kirbydrame.jpeg", "DreamCollectionF.jpg", "bat.png"];
