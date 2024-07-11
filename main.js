@@ -7,7 +7,7 @@ document.getElementById('u').onkeydown = function(event) {
         if (input.toLowerCase() == "wirby maps"){
             window.open(`https://wirbymaps.pages.dev/`);
         } else {
-           window.open(`https://www.google.com/search?q=${input}`);
+           window.open(input);
         }
     }
 }
