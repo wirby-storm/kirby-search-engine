@@ -4,7 +4,12 @@ const re = document.getElementById('q')
 document.getElementById('u').onkeydown = function(event) {
     const input = document.getElementById('u').value
     if (event.keyCode == 13 && input.length > 0) {
-        window.open(`https://www.google.com/search?q=${input}`);
+        if (input.toLowerCase(); = "wirby maps"){
+            window.open(`https://wirbymaps.pages.dev/`);
+        }
+        else {
+           window.open(`https://www.google.com/search?q=${input}`);
+        }
     }
 }
 
