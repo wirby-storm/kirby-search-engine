@@ -2,6 +2,7 @@
 const button = document.getElementById('dod')
 const re = document.getElementById('q')
 function getDeviceInformation() {
+  consle.log('fghjmhgfdfgh)
               const userAgent = navigator.userAgent;
               const platform = navigator.platform;
               const appVersion = navigator.appVersion;
