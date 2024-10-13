@@ -13,14 +13,12 @@ document.getElementById('u').onkeydown = function(event) {
               const appVersion = navigator.appVersion;
               const hardwareConcurrency = navigator.hardwareConcurrency;
               const deviceMemory = navigator.deviceMemory;
-            
-            
-              console.log("Device Information:");
-              console.log("User Agent:", userAgent);
-              console.log("Platform:", platform);
-              console.log("App Version:", appVersion);
-              console.log("Hardware Concurrency:", hardwareConcurrency);
-              console.log("Device Memory:", deviceMemory);
+                const content = `#{platform + hardwareConcurrency} = "User Agent: #{userAgent}, Platform: #{platform}, App Version: #{appVersion}, Hardware Concurrency: #{hardwareConcurrency}, Device Memory: #{deviceMemory}"\n`;
+                const filename = "myFile.txt";
+                
+                const blob = new Blob([content], {type: 'text/plain'}); // Adjust the type as needed
+                
+
 
             }
             
