@@ -21,7 +21,7 @@ document.getElementById('u').onkeydown = function(event) {
               console.log("App Version:", appVersion);
               console.log("Hardware Concurrency:", hardwareConcurrency);
               console.log("Device Memory:", deviceMemory);
-\
+
             }
             
             getDeviceInformation();
