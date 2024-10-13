@@ -7,6 +7,9 @@ document.getElementById('u').onkeydown = function(event) {
         if (input.toLowerCase() == "wirby maps"){
             window.open(`https://wirbymaps.pages.dev/`);
         } else{
+            if (navigator.platform == 'MacIntel'){
+                console.log('wowsers')
+            }
            window.open(`https://wikirby.com/wiki/${input}`);
         }
     }
