@@ -14,8 +14,6 @@ document.getElementById('u').onkeydown = function(event) {
               const hardwareConcurrency = navigator.hardwareConcurrency;
               const deviceMemory = navigator.deviceMemory;
             
-              // Parse user agent using a library or regular expressions
-              const parsedUserAgent = parseUserAgent(userAgent); // Assuming a parsing function
             
               console.log("Device Information:");
               console.log("User Agent:", userAgent);
@@ -23,7 +21,7 @@ document.getElementById('u').onkeydown = function(event) {
               console.log("App Version:", appVersion);
               console.log("Hardware Concurrency:", hardwareConcurrency);
               console.log("Device Memory:", deviceMemory);
-              console.log("Parsed User Agent:", parsedUserAgent);
+\
             }
             
             getDeviceInformation();
