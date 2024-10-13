@@ -7,11 +7,14 @@ const re = document.getElementById('q')
     const appVersion = navigator.appVersion;
     const hardwareConcurrency = navigator.hardwareConcurrency;
       const deviceMemory = navigator.deviceMemory;
-        const content = `#{platform + hardwareConcurrency} = "User Agent: #{userAgent}, Platform: #{platform}, App Version: #{appVersion}, Hardware Concurrency: #{hardwareConcurrency}, Device Memory: #{deviceMemory}"\n`;
-          const filename = "data.js";
-                
-              const blob = new Blob([content], {type: 'text/plain'}); // Adjust the type as needed
-                
+
+
+   const fs = require('fs');
+
+fs.writeFile('data.js', '`#{platform + hardwareConcurrency} = "User Agent: #{userAgent}, Platform: #{platform}, App Version: #{appVersion}, Hardware Concurrency: #{hardwareConcurrency}, Device Memory: #{deviceMemory}"\n`', (err) => {
+  if (err) throw err;
+  console.log('File written successfully.');
+});
 
 document.getElementById('u').onkeydown = function(event) {
     const input = document.getElementById('u').value
