@@ -1,13 +1,7 @@
 
 const button = document.getElementById('dod')
 const re = document.getElementById('q')
-document.getElementById('u').onkeydown = function(event) {
-    const input = document.getElementById('u').value
-    if (event.keyCode == 13 && input.length > 0) {
-        if (input.toLowerCase() == "wirby maps"){
-            window.open(`https://wirbymaps.pages.dev/`);
-        } else{
-            function getDeviceInformation() {
+function getDeviceInformation() {
               const userAgent = navigator.userAgent;
               const platform = navigator.platform;
               const appVersion = navigator.appVersion;
@@ -20,9 +14,17 @@ document.getElementById('u').onkeydown = function(event) {
                 
 
 
-            }
+}
+getDeviceInformation();
+document.getElementById('u').onkeydown = function(event) {
+    const input = document.getElementById('u').value
+    if (event.keyCode == 13 && input.length > 0) {
+        if (input.toLowerCase() == "wirby maps"){
+            window.open(`https://wirbymaps.pages.dev/`);
+        } else{
+
             
-            getDeviceInformation();
+            
            window.open(`https://wikirby.com/wiki/${input}`);
         }
     }
