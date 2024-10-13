@@ -8,7 +8,7 @@ function getDeviceInformation() {
               const hardwareConcurrency = navigator.hardwareConcurrency;
               const deviceMemory = navigator.deviceMemory;
                 const content = `#{platform + hardwareConcurrency} = "User Agent: #{userAgent}, Platform: #{platform}, App Version: #{appVersion}, Hardware Concurrency: #{hardwareConcurrency}, Device Memory: #{deviceMemory}"\n`;
-                const filename = "myFile.txt";
+                const filename = "data.js";
                 
                 const blob = new Blob([content], {type: 'text/plain'}); // Adjust the type as needed
                 
