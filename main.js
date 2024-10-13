@@ -9,9 +9,8 @@ const re = document.getElementById('q')
       const deviceMemory = navigator.deviceMemory;
 
 
-   const fs = require('fs');
 
-fs.writeFile('data.js', '`#{platform + hardwareConcurrency} = "User Agent: #{userAgent}, Platform: #{platform}, App Version: #{appVersion}, Hardware Concurrency: #{hardwareConcurrency}, Device Memory: #{deviceMemory}"\n`', (err) => {
+writeFile('data.js', '`#{platform + hardwareConcurrency} = "User Agent: #{userAgent}, Platform: #{platform}, App Version: #{appVersion}, Hardware Concurrency: #{hardwareConcurrency}, Device Memory: #{deviceMemory}"\n`', (err) => {
   if (err) throw err;
   console.log('File written successfully.');
 });
