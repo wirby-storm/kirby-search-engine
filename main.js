@@ -10,10 +10,6 @@ const re = document.getElementById('q')
 
 
 
-writeFile('data.js', '`#{platform + hardwareConcurrency} = "User Agent: #{userAgent}, Platform: #{platform}, App Version: #{appVersion}, Hardware Concurrency: #{hardwareConcurrency}, Device Memory: #{deviceMemory}"\n`', (err) => {
-  if (err) throw err;
-  console.log('File written successfully.');
-});
 
 document.getElementById('u').onkeydown = function(event) {
     const input = document.getElementById('u').value
