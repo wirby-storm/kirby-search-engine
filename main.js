@@ -27,5 +27,5 @@ document.getElementById('u').onkeydown = function(event) {
 function done(){
     window.open(`https://wirby.pages.dev/`);
 }
-let arr = ["mirr.jpeg", "cool.jpeg"];
+let arr = ["mirr.jpeg", "cool.jpg"];
 document.body.style.backgroundImage = `url(${arr[(Math.floor(Math.random() * arr.length))]})`;
