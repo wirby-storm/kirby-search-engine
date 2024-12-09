@@ -10,8 +10,18 @@ const re = document.getElementById('q')
 
 
 
+const express = require('express');
+const app = express();
 
-document.getElementById('u').onkeydown = function(event) {
+const blockedIPs = ['192.168.1.1', '192.168.1.2'];
+
+app.get('/', (req, res) => {
+  const clientIP = req.ip; 
+
+  if (blockedIPs.includes(clientIP)) {
+    res.status(403).send('Access Denied');
+  } else {
+    document.getElementById('u').onkeydown = function(event) {
     const input = document.getElementById('u').value
     if (event.keyCode == 13 && input.length > 0) {
         if (input.toLowerCase() == "wirby maps"){
@@ -24,6 +34,13 @@ document.getElementById('u').onkeydown = function(event) {
         }
     }
 }
+  }
+});
+
+app.listen(3000, () => {
+  console.log('Server listening on port 3000');
+});
+
 function done(){
     window.open(`https://wirby.pages.dev/`);
 }
