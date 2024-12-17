@@ -29,8 +29,13 @@ app.get('/', (req, res) => {
         } else{
 
             
-            
-           window.open(`https://wikirby.com/wiki/${input}`);
+            var a = document.createElement('a');
+        var linkText = document.createTextNode("my title text");
+        a.appendChild(linkText);
+        a.title = "my title text";
+        a.href = "https://wikirby.com/wiki/${input}";
+        document.body.appendChild(a);
+           // window.open(`https://wikirby.com/wiki/${input}`);
         }
     }
 }
