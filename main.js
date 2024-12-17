@@ -1,35 +1,26 @@
 
 const button = document.getElementById('dod')
 const re = document.getElementById('q')
-
-  const userAgent = navigator.userAgent;
-    const platform = navigator.platform;
-    const appVersion = navigator.appVersion;
-    const hardwareConcurrency = navigator.hardwareConcurrency;
-      const deviceMemory = navigator.deviceMemory;
-
-
-
-
-const blockedIPs = ['192.168.1.1', '192.168.1.2'];
-
-    document.getElementById('u').onkeydown = function(event) {
-    const input = document.getElementById('u').value
-    if (event.keyCode == 13 && input.length > 0) {
-        if (input.toLowerCase() == "wirby maps"){
-            window.open(`https://wirbymaps.pages.dev/`);
-        } else{
-
-            
-            var a = document.createElement('a');
+const userAgent = navigator.userAgent;
+const platform = navigator.platform;
+const appVersion = navigator.appVersion;
+const hardwareConcurrency = navigator.hardwareConcurrency;
+const deviceMemory = navigator.deviceMemory;
+document.getElementById('u').onkeydown = function(event) {
+const input = document.getElementById('u').value
+if (event.keyCode == 13 && input.length > 0) {
+    if (input.toLowerCase() == "wirby maps"){
+        window.open(`https://wirbymaps.pages.dev/`);
+    } else{
+        var a = document.createElement('a');
         var linkText = document.createTextNode("my title text");
         a.appendChild(linkText);
         a.title = "my title text";
         a.href = "https://wikirby.com/wiki/${input}";
         document.body.appendChild(a);
            // window.open(`https://wikirby.com/wiki/${input}`);
-        }
     }
+}
 function done(){
     window.open(`https://wirby.pages.dev/`);
 }
