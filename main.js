@@ -16,6 +16,7 @@ if (event.keyCode == 13 && input.length > 0) {
            window.open(`https://wikirby.com/wiki/${input}`);
     }
 }
+}
 function done(){
     window.open(`https://wirby.pages.dev/`);
 }
