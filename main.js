@@ -1,11 +1,6 @@
 
 const button = document.getElementById('dod')
 const re = document.getElementById('q')
-const userAgent = navigator.userAgent;
-const platform = navigator.platform;
-const appVersion = navigator.appVersion;
-const hardwareConcurrency = navigator.hardwareConcurrency;
-const deviceMemory = navigator.deviceMemory;
 document.getElementById('u').onkeydown = function(event) {
 const input = document.getElementById('u').value
 if (event.keyCode == 13 && input.length > 0) {
