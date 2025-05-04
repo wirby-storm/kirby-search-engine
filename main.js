@@ -10,14 +10,15 @@ if (event.keyCode == 13 && input.length > 0) {
         var a = document.createElement('a');
         var linkText = document.createTextNode("my title text");
         a.appendChild(linkText);
-        a.title = "Wikirby";
+        a.textContent = "Wikirby";
         a.href = `https://wikirby.com/wiki/${input}`;
+        a.target = "blank"
         document.body.appendChild(a);
         var a = document.createElement('a');
         var linkText = document.createTextNode("my title text");
         a.appendChild(linkText);
-        a.textContent = "Wikirby";
-        a.href = `https://wikirby.com/wiki/${input}`;
+        a.textContent = "Kirbytraum";
+        a.href = `https://kirby.webnwork.com/en/${input}`;
         document.body.appendChild(a);
     }
 }
