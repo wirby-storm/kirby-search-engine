@@ -1,3 +1,5 @@
+import { input } from './main.js';
+console.log(input);
 var a = document.createElement('a');
         var linkText = document.createTextNode("my title text");
         a.appendChild(linkText);
