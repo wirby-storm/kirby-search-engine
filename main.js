@@ -8,6 +8,7 @@ if (event.keyCode == 13 && input.length > 0) {
         window.open(`https://wirbymaps.pages.dev/`);
     } else{
           window.open(`https://wirby.pages.dev/search/${input}`);
+        window.close();
     }
 }
 }
