@@ -13,7 +13,12 @@ if (event.keyCode == 13 && input.length > 0) {
         a.title = "Wikirby";
         a.href = `https://wikirby.com/wiki/${input}`;
         document.body.appendChild(a);
-           window.open(`https://wikirby.com/wiki/${input}`);
+        var a = document.createElement('a');
+        var linkText = document.createTextNode("my title text");
+        a.appendChild(linkText);
+        a.textContent = "Wikirby";
+        a.href = `https://wikirby.com/wiki/${input}`;
+        document.body.appendChild(a);
     }
 }
 }
