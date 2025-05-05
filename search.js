@@ -1,5 +1,6 @@
-import { input } from './main.js';
-console.log(input);
+const urlParams = new URLSearchParams(window.location.search);
+const input = urlParams.get('input'); // Replace 'paramName' with the actual parameter you want
+console.log(input); // Will log the value of the parameter or null if it doesn't exist
 var a = document.createElement('a');
         var linkText = document.createTextNode("my title text");
         a.appendChild(linkText);
