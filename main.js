@@ -9,7 +9,6 @@ if (event.keyCode == 13 && input.length > 0) {
     } else{
           window.open(`https://wirbysearch.pages.dev/search?q=${input}`);
         window.close();
-        export { input };
     }
 }
 }
