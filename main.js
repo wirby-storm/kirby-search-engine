@@ -3,6 +3,9 @@ const button = document.getElementById('dod')
 const re = document.getElementById('q')
 document.getElementById('u').onkeydown = function(event) {
 const input = document.getElementById('u').value
+if (input == " "){
+    input.textContent = "Slurby"
+}
 if (event.keyCode == 13 && input.length > 0) {
     if (input.toLowerCase() == "wirby maps"){
         window.open(`https://wirbymaps.pages.dev/`);
