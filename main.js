@@ -1,8 +1,12 @@
 
 const button = document.getElementById('dod')
 const re = document.getElementById('q')
+let input = document.getElementById('u').value
+if (input == " "){
+    input.textContent = "Slurby"
+}
 document.getElementById('u').onkeydown = function(event) {
-const input = document.getElementById('u').value
+input = document.getElementById('u').value
 if (input == " "){
     input.textContent = "Slurby"
 }
@@ -14,6 +18,26 @@ if (event.keyCode == 13 && input.length > 0) {
         window.close();
     }
 }
+}
+function isMobileDevice() {
+  // Check for touch support and user agent keywords
+  const hasTouch = ('ontouchstart' in document.documentElement || navigator.maxTouchPoints > 0);
+  const userAgent = navigator.userAgent.toLowerCase();
+  const isMobileUserAgent = /(android|webos|iphone|ipad|ipod|blackberry|windows phone)/i.test(userAgent);
+
+  // Check screen width for smaller devices
+  const screenWidth = window.screen.width;
+  const isSmallScreen = screenWidth <= 768; // Adjust breakpoint as needed
+
+  // Combine checks
+  return hasTouch && (isMobileUserAgent || isSmallScreen);
+}
+
+// Example usage
+if (isMobileDevice()) {
+  console.log("User is on a mobile device.");
+} else {
+  console.log("User is not on a mobile device.");
 }
 function done(){
     window.open(`https://wirby.pages.dev/search/{}`);
