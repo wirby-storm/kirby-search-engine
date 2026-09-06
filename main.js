@@ -14,26 +14,21 @@ if (event.keyCode == 13 && input.length > 0) {
     if (input.toLowerCase() == "wirby maps"){
         window.open(`https://wirbymaps.pages.dev/`);
     } else{
-          window.open(`https://wirbysearch.pages.dev/search?q=${input}`, "blank");
+          window.open(`https://google.com/search?q=${input}`, "blank");
         window.close();
     }
 }
 }
 function isMobileDevice() {
-  // Check for touch support and user agent keywords
   const hasTouch = ('ontouchstart' in document.documentElement || navigator.maxTouchPoints > 0);
   const userAgent = navigator.userAgent.toLowerCase();
   const isMobileUserAgent = /(android|webos|iphone|ipad|ipod|blackberry|windows phone)/i.test(userAgent);
-
-  // Check screen width for smaller devices
   const screenWidth = window.screen.width;
-  const isSmallScreen = screenWidth <= 768; // Adjust breakpoint as needed
+  const isSmallScreen = screenWidth <= 768; 
 
-  // Combine checks
   return hasTouch && (isMobileUserAgent || isSmallScreen);
 }
 
-// Example usage
 if (isMobileDevice()) {
   console.log("User is on a mobile device.");
 } else {
