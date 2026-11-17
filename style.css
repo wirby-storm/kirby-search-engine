@@ -11,7 +11,7 @@ body {
   background-attachment: fixed; 
 
 }
-input {
+#u {
   /* background-color: black; */
   /* box-shadow: none; */
   border:  none;
@@ -23,11 +23,11 @@ input {
   
 }
 
-input:focus {
+#u:focus {
   outline: none;
 }
 
-div {
+#div {
   border-radius: 15px;
   max-width: 200px;
   padding: 10px 13px;
@@ -38,7 +38,7 @@ div {
   margin-right: 10px;
   background-color: white;
 }
-button {
+/* button {
   font-family: "tiny5", sans-serif;
   font-size: 17px;
   border-radius: 15px;
@@ -47,4 +47,4 @@ button {
 }
 button:hover{
   background-color: hsl(0, 0%, 90%);
-}
+} */
