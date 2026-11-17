@@ -2,6 +2,17 @@
 const button = document.getElementById('dod')
 const re = document.getElementById('q')
 let input = document.getElementById('u').value
+document.getElementById("u").addEventListener("keydown", function(event) {
+  if (event.key === "Enter") {
+    const query = this.value.trim();
+
+    if (query) {
+      google.search.cse.element
+        .getElement("searchresults-only0")
+        .execute(query);
+    }
+  }
+});
 if (input == " "){
     input.textContent = "Slurby"
 }
